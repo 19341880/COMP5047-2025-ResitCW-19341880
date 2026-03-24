@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OiI90AgEEfGONfTB1A9nrw" name="UML diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_OoAVQAgEEfGONfTB1A9nrw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_K7v0AAgGEfGONfTB1A9nrw" name="API gateway"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_M-RFYAgGEfGONfTB1A9nrw" name="student mobile app">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Oky-UAgGEfGONfTB1A9nrw" name="uses" client="_M-RFYAgGEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_P13koAgGEfGONfTB1A9nrw" name="Society leader mobile app">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_beGzEAgGEfGONfTB1A9nrw" name="Uses" client="_P13koAgGEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_VX30oAgGEfGONfTB1A9nrw" name="Union web portal">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_cKFvUAgGEfGONfTB1A9nrw" name="uses" client="_VX30oAgGEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_XI2qEAgGEfGONfTB1A9nrw" name="USU admin desktop app">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_cq26EAgGEfGONfTB1A9nrw" name="Uses" client="_XI2qEAgGEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_xD2zgAgGEfGONfTB1A9nrw" name="Authentification ">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_H07-oAgHEfGONfTB1A9nrw" name="routes" client="_xD2zgAgGEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_yU4WgAgGEfGONfTB1A9nrw" name="Membership">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_IZutwAgHEfGONfTB1A9nrw" name="routes" client="_yU4WgAgGEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_0CE4IAgGEfGONfTB1A9nrw" name="ticketing service">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_JuvY4AgHEfGONfTB1A9nrw" client="_0CE4IAgGEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_2CIEUAgGEfGONfTB1A9nrw" name="Notification service">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_KMC_8AgHEfGONfTB1A9nrw" name="routes" client="_2CIEUAgGEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_3zSf8AgGEfGONfTB1A9nrw" name="Media service">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_OCyA8AgHEfGONfTB1A9nrw" name="routes" client="_3zSf8AgGEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_AFAegAgHEfGONfTB1A9nrw" name="event management service">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_LUcycAgHEfGONfTB1A9nrw" name="routes" client="_AFAegAgHEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_De-rAAgHEfGONfTB1A9nrw" name="Society management service">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Mwhu4AgHEfGONfTB1A9nrw" name="routes" client="_De-rAAgHEfGONfTB1A9nrw" supplier="_K7v0AAgGEfGONfTB1A9nrw"/>
+  </packagedElement>
+</uml:Model>

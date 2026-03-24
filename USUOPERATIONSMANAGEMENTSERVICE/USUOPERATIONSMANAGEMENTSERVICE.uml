@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OTWtkNAiEfCKXffgAxSiwQ" name="USUOPERATIONSMANAGEMENTSERVICE">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_OWvYwNAiEfCKXffgAxSiwQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_U1BDwNAiEfCKXffgAxSiwQ" name="Membership manager">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_g9mmMNAiEfCKXffgAxSiwQ" name="reviewapplication(app)"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__x8dINAiEfCKXffgAxSiwQ" name="Approvemembership(app)"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EZhFMNAjEfCKXffgAxSiwQ" name="Updateunion(app)"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IA4NcNAjEfCKXffgAxSiwQ" name="Terminateunion(app)"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NC3goNAjEfCKXffgAxSiwQ" name="Fetchunion(UnionID)"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gm-HgdAlEfCKXffgAxSiwQ" name="membershipapplication" type="_7qw6cNAkEfCKXffgAxSiwQ" association="_gm8SUNAlEfCKXffgAxSiwQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gm-HgtAlEfCKXffgAxSiwQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gm-ukNAlEfCKXffgAxSiwQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hrBQYNAjEfCKXffgAxSiwQ" name="Member">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mWzqENAjEfCKXffgAxSiwQ" name="StudentID: String"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rzHhwNAjEfCKXffgAxSiwQ" name="Name: String"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vNDSANAjEfCKXffgAxSiwQ" name="Email: String"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xu1SQNAjEfCKXffgAxSiwQ" name="MembershipStatus: String"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0iklMNAjEfCKXffgAxSiwQ" name="dateJoined: Date"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oPq_gCdfEfGtmoPeV8u78A" name="membershipdatabase" type="_7qw6cNAkEfCKXffgAxSiwQ" association="_oPmuECdfEfGtmoPeV8u78A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oPsNoCdfEfGtmoPeV8u78A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oPsNoSdfEfGtmoPeV8u78A" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4cA78NAjEfCKXffgAxSiwQ" name="UpdateDetails()"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6oYs4NAjEfCKXffgAxSiwQ" name="CheckMembershipValidity()"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7qw6cNAkEfCKXffgAxSiwQ" name="MembershipDatabase">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-q1ZMNAkEfCKXffgAxSiwQ" name="ApplicationID: String"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ajj1YNAlEfCKXffgAxSiwQ" name="ApplicationType: ApplicationType"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DSHtYNAlEfCKXffgAxSiwQ" name="status :ApplicationStatus"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_F3LEENAlEfCKXffgAxSiwQ" name="Uniondata: Unionregistrationdata"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JSX_oNAlEfCKXffgAxSiwQ" name="submit"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KnR9ENAlEfCKXffgAxSiwQ" name="approve"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_MVVaUNAlEfCKXffgAxSiwQ" name="reject"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gm8SUNAlEfCKXffgAxSiwQ" memberEnd="_gm-HgdAlEfCKXffgAxSiwQ _gm-ukdAlEfCKXffgAxSiwQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gm9gcNAlEfCKXffgAxSiwQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gm-HgNAlEfCKXffgAxSiwQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gm-ukdAlEfCKXffgAxSiwQ" name="membership manager" type="_U1BDwNAiEfCKXffgAxSiwQ" association="_gm8SUNAlEfCKXffgAxSiwQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oPmuECdfEfGtmoPeV8u78A" memberEnd="_oPq_gCdfEfGtmoPeV8u78A _oPsNoidfEfGtmoPeV8u78A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oPpxYCdfEfGtmoPeV8u78A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oPqYcCdfEfGtmoPeV8u78A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oPsNoidfEfGtmoPeV8u78A" name="member" type="_hrBQYNAjEfCKXffgAxSiwQ" association="_oPmuECdfEfGtmoPeV8u78A"/>
+  </packagedElement>
+</uml:Model>
